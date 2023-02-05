@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #14213d;
+}
+
+/* ------------- header section starts --------------- */
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+  url("./cards.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.menu ul {
+  padding: 1.2rem 0;
+  list-style: none;
+  height: 100%;
+  gap: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.menu a:hover,
+.menu:active {
+  color: white;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid white;
+}
+
+.welcome-screen {
+  display: flex;
+  min-height: 90vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-title {
+  width: 50%;
+  text-align: center;
+}
+
+.welcome-title h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: #fca311;
+}
+
+.welcome-title h1:first-child {
+  animation: move-left 3s forwards;
+}
+
+@keyframes move-left {
+  from {
+    transform: translateX(0rem);
+  }
+  to {
+    transform: translateX(-6rem);
+  }
+}
+
+.welcome-title h1:last-child {
+  animation: move-right 3s forwards;
+}
+@keyframes move-right {
+  from {
+    transform: translateX(0rem);
+  }
+  to {
+    transform: translateX(6rem);
+  }
+}
+
+.welcome-title h1:nth-child(2) {
+  font-size: 3rem;
+  text-transform: lowercase;
+  font-weight: lighter;
+  letter-spacing: 0rem;
+}
+
+.welcome-image {
+  width: 50%;
+  }
+
+.welcome-image .welcome-card {
+  width: 15.62rem;
+  height: 23rem;
+  border-radius: 1rem;
+  background: url("./ace.png");
+  background-size: cover;
+  margin: 0 auto;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.429);
+}
+/* ------------- header section ends --------------- */
+/* ------------- main section starts --------------- */
+.guide-lines {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 8rem 0;
+}
+
+.guide-lines h1 {
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 1px 1px 10px black;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+
+.guide-lines ul {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 3rem;
+  list-style-type: circle;
+  color: white;
+}
+
+.guide-lines a {
+  color: #fca311;
+  text-decoration: none;
+}
+
+.main {
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  gap: 2rem;
+}
+
+.container {
+  position: relative;
+  width: 10rem;
+  height: 15rem;
+  margin: 1rem;
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.front {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  background: url("./card-front.png");
+  background-size: cover;
+  border-radius: 10px;
+  transition: 0.5s;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.front:hover {
+  transform: scale(1.2);
+}
+
+.back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.result {
+  color: white;
+  text-align: center;
+  visibility: hidden;
+}
+
+.retry {
+  visibility: hidden;
+  display: block;
+  margin: 2rem auto;
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: rgba(19, 132, 19, 0.713);
+  color: white;
+  box-shadow: 2px 2px 5px rgba(13, 13, 13, 0.634);
+}
+
+/* ------------- main section ends --------------- */
+/* ------------- footer section starts --------------- */
+
+.footer {
+  background: #fca311;
+  color: white;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer-text1 p:last-child,
+.footer-text3 p:last-child {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin-top: 0.5rem;
+}
+
+/* ------------- footer section ends --------------- */
+
+
+/* ---------------------- css for max-width 500px --------------------- */
+@media(max-width: 500px) {
+ 
+  header {
+    background: none;
+  }
+  .menu ul {
+    gap: 1.5rem;
+    padding-top: 2rem;
+  }
+  .welcome-screen {
+    flex-direction: column;
+    margin: 2rem 0;
+    min-height: 20vh;
+  }
+  .welcome-title {
+    width: 100%;
+  }
+  .welcome-title h1 {
+    font-size: 3rem;
+  }
+
+  .welcome-title h1:first-child {
+    animation: move-left 3s forwards;
+  }
+  
+  @keyframes move-left {
+    from {
+      transform: translateX(0rem);
+    }
+    to {
+      transform: translateX(0rem);
+    }
+  }
+  
+  .welcome-title h1:last-child {
+    animation: move-right 3s forwards;
+  }
+  @keyframes move-right {
+    from {
+      transform: translateX(0rem);
+    }
+    to {
+      transform: translateX(0rem);
+    }
+  }
+  
+  .welcome-image {
+    width: 100%;
+    margin: 3rem 0;
+  }
+  .welcome-image .welcome-card {
+    width: 11.6rem;
+    height: 17rem;
+  }
+
+  .guide-lines {
+    margin: 2rem 0;
+    min-height: 30vh;
+  }
+  .guide-lines h1 {
+    font-size: 1.3rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    margin-bottom: 0;
+  }
+  .guide-lines ul {
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 2rem;
+    width: 85%;
+  }
+  .main {
+    grid-template-columns: repeat(2, auto);
+    margin-bottom: 2rem;
+  }
+  .container {
+    width: 8rem;
+    height: 12rem;
+    margin: 0;
+  }
+  .back {
+    font-size: 0.6rem;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+  }
+  .footer-text1 p:last-child,
+  .footer-text3 p:last-child {
+    font-size: 0.8rem;
+  }
+}
+
+
+/* -------------- css for width b/w 501px and 900px -----------*/
+@media(min-width: 501px) and (max-width : 900px) {
+ 
+  header {
+    background: none;
+  }
+  .menu ul {
+    gap: 1.5rem;
+    padding-top: 2rem;
+  }
+  .welcome-screen {
+    flex-direction: column;
+    margin: 2rem 0;
+    min-height: 20vh;
+  }
+  .welcome-title {
+    width: 100%;
+  }
+  .welcome-title h1 {
+    font-size: 3rem;
+  }
+
+  .welcome-title h1:first-child {
+    animation: move-left 3s forwards;
+  }
+  
+  @keyframes move-left {
+    from {
+      transform: translateX(0rem);
+    }
+    to {
+      transform: translateX(0rem);
+    }
+  }
+  
+  .welcome-title h1:last-child {
+    animation: move-right 3s forwards;
+  }
+  @keyframes move-right {
+    from {
+      transform: translateX(0rem);
+    }
+    to {
+      transform: translateX(0rem);
+    }
+  }
+  
+  .welcome-image {
+    width: 100%;
+    margin: 3rem 0;
+  }
+  .welcome-image .welcome-card {
+    width: 11.6rem;
+    height: 17rem;
+  }
+
+  .guide-lines {
+    margin: 2rem 0;
+    min-height: 30vh;
+  }
+  .guide-lines h1 {
+    font-size: 1.3rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    margin-bottom: 0;
+  }
+  .guide-lines ul {
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 2rem;
+    width: 85%;
+  }
+  .main {
+    grid-template-columns: repeat(3, auto);
+    margin-bottom: 2rem;
+  }
+  .container {
+    width: 8rem;
+    height: 12rem;
+    margin: 0;
+  }
+  .back {
+    font-size: 0.6rem;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+  }
+  .footer-text1 p:last-child,
+  .footer-text3 p:last-child {
+    font-size: 0.8rem;
+  }
+}
