@@ -30,4 +30,4 @@ _Technologies:_
 - CSS
 - JavaScript
 
-<img src="./ace.png"  width="60%" height="30%">
+<img src="./ace.png"  width="10%">
