@@ -32,7 +32,7 @@ _Technologies:_
 
 ### screen shots
 
-<img src="./screenshots/pic-1"  width="80%" style="margin : 0 auto">
-<img src="./screenshots/pic-2"  width="80%" style="margin : 0 auto">
-<img src="./screenshots/pic-3"  width="80%" style="margin : 0 auto">
-<img src="./screenshots/pic-4"  width="80%" style="margin : 0 auto">
+<img src="./screenshots/pic-1.png"  width="80%" style="margin : 0 auto">
+<img src="./screenshots/pic-2.png"  width="80%" style="margin : 0 auto">
+<img src="./screenshots/pic-3.png"  width="80%" style="margin : 0 auto">
+<img src="./screenshots/pic-4.png"  width="80%" style="margin : 0 auto">
