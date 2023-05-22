@@ -4,7 +4,7 @@ _It is a game based web application where the user gets 6 cards. ecah card have 
 
 [[click here to visit site](https://iammadhanmohan.github.io/flipcard/ "flipCard")]
 
----
+
 
 **some of the features of the project**
 
@@ -16,7 +16,7 @@ _It is a game based web application where the user gets 6 cards. ecah card have 
 
 > CSS Animations
 
----
+
 
 <!-- ### Tools & Technologies -->
 
@@ -30,9 +30,9 @@ _Technologies:_
 - CSS
 - JavaScript
 
-### screen shots
+### Screen Shots
+<p align="center"><img src="./screenshots/pic-1.png"  width="80%" style="margin : 0 auto"></p>
 
-<img src="./screenshots/pic-1.png"  width="80%" style="margin : 0 auto">
 <img src="./screenshots/pic-2.png"  width="80%" style="margin : 0 auto">
 <img src="./screenshots/pic-3.png"  width="80%" style="margin : 0 auto">
 <img src="./screenshots/pic-4.png"  width="80%" style="margin : 0 auto">
