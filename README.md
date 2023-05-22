@@ -30,4 +30,9 @@ _Technologies:_
 - CSS
 - JavaScript
 
-<img src="./ace.png"  width="10%">
+### screen shots
+
+<img src="./screenshots/pic-1"  width="80%" style="margin : 0 auto">
+<img src="./screenshots/pic-2"  width="80%" style="margin : 0 auto">
+<img src="./screenshots/pic-3"  width="80%" style="margin : 0 auto">
+<img src="./screenshots/pic-4"  width="80%" style="margin : 0 auto">
