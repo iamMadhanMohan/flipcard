@@ -30,4 +30,4 @@ _Technologies:_
 - CSS
 - JavaScript
 
-![image](./ace.png)
+<img src="./FlipTheCard/ace.png"  width="60%" height="30%">
